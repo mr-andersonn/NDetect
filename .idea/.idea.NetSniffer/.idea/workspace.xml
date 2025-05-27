@@ -9,7 +9,19 @@
   <component name="ChangeListManager">
     <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Views/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/NetSniffer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/NetSniffer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/Avalonia/resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +54,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2xej6JZXaitMtK01aQw9qSK8Xqx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,6 +66,7 @@
     &quot;.NET Project.NetSniffer.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -96,6 +112,8 @@
       <workItem from="1748212391856" duration="16000" />
       <workItem from="1748212883814" duration="122000" />
       <workItem from="1748305257884" duration="2596000" />
+      <workItem from="1748342982274" duration="54000" />
+      <workItem from="1748353962155" duration="308000" />
     </task>
     <servers />
   </component>
