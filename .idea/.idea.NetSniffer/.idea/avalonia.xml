@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="NetSniffer/App.axaml" value="NetSniffer/NetSniffer.csproj" />
         <entry key="NetSniffer/Views/MainWindow.axaml" value="NetSniffer/NetSniffer.csproj" />
       </map>
     </option>
