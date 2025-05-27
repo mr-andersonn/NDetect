@@ -19,6 +19,9 @@
         <Button Content="{Binding ButtonContent}"
                 VerticalContentAlignment="Center"
                 HorizontalContentAlignment="Center" />
+        <Button Content="{Binding ButtonContent}"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center" />
         
         
     </StackPanel>
