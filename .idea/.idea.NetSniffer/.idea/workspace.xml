@@ -10,18 +10,6 @@
     <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer/NetSniffer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/NetSniffer.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/Avalonia/resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +101,7 @@
       <workItem from="1748212883814" duration="122000" />
       <workItem from="1748305257884" duration="2596000" />
       <workItem from="1748342982274" duration="54000" />
-      <workItem from="1748353962155" duration="308000" />
+      <workItem from="1748353962155" duration="981000" />
     </task>
     <servers />
   </component>
