@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Threading.Tasks;
@@ -31,4 +32,32 @@ public class PingSweeper
             // Do nothing
         }
     }
+
+    public async Task<List<Device>> FilterAliveDevices(List<Device> devices, int timeout = 500)
+    {
+        var aliveDevices = new List<Device>();
+        var tasks = devices.Select(async device =>
+        {
+            try
+            {
+                using var ping = new Ping();
+
+                IPAddress ip = IPAddress.Parse(device.Ip);
+                PingReply reply = await ping.SendPingAsync(ip, timeout);
+
+                if (reply.Status == IPStatus.Success)
+                {
+                    lock (aliveDevices) aliveDevices.Add(device);
+                }
+            }
+            catch
+            {
+                // Do nothing
+            }
+        });
+        
+        await Task.WhenAll(tasks);
+        return aliveDevices;
+    }
+    
 }

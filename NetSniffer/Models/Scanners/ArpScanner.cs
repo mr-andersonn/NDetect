@@ -21,11 +21,14 @@ public class ArpScanner : IScanner
         // Phase Intermediate: Wait for the OS to save all answers in cache
         await Task.Delay(1000);
         
-        //Phase 3: Collect ips from cache
+        // Phase 3: Collect ips from cache
         var arpTableReader = new ArpTableReader();
-        var devices = arpTableReader.GetDevicesFromCache();
         
-        return new ScanResult(devices);
+        // Phase 4: Filter active devices 
+        var devices = arpTableReader.GetDevicesFromCache();
+        var activeDevices = await pingSweeper.FilterAliveDevices(devices);
+        
+        return new ScanResult(activeDevices);
     }
     
 }

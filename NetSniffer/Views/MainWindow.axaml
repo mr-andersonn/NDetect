@@ -11,18 +11,24 @@
         Width="800"
         Height="500">
 
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25">
          
         <TextBlock Text="{Binding Description}"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
         <Button Content="{Binding ButtonContent}"
-                VerticalContentAlignment="Center"
-                HorizontalContentAlignment="Center" />
-        <Button Content="{Binding ButtonContent}"
+                Click="RunScan_Click"
                 VerticalContentAlignment="Center"
                 HorizontalContentAlignment="Center" />
         
+        
+        <ItemsControl x:Name="DeviceList" Margin="25">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
         
     </StackPanel>
     

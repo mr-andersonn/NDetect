@@ -10,8 +10,24 @@
     <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Device.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Device.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/SavedScans.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/SavedScans.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/ScanResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/ScanResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/ArpScannerLogic/PingSweeper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/ArpScannerLogic/PingSweeper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/ScanManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/ScanManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Scanners/ArpScanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Scanners/ArpScanner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/ViewModels/MainWindowViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Views/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Views/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/Avalonia/resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +56,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3487b1d537f14cec9b3ac0b48215f301e26400/a4/31fc6ddb/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d9677277995708e62f4fdd895f179695db5953fef873388ebb137d2af2ec8e8/Record.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f745171ac1d9709943357d18d6d284cbcde3d621ec6b1caff5ece86394b7d9a9/CompiledBindingExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///tmp/JetBrainsPerUserTemp-1000-1/SourceGeneratedDocuments/1A1DD6AEEA669FA0F790BA48/Avalonia.Generators/Avalonia.Generators.NameGenerator.AvaloniaNameSourceGenerator/NetSniffer.Views.MainWindow.g.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -109,7 +126,7 @@
       <workItem from="1748353962155" duration="10484000" />
       <workItem from="1748372789964" duration="7400000" />
       <workItem from="1748386189470" duration="3856000" />
-      <workItem from="1748431210657" duration="10361000" />
+      <workItem from="1748431210657" duration="16346000" />
     </task>
     <servers />
   </component>

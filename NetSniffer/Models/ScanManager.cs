@@ -8,7 +8,7 @@ public class ScanManager
     private readonly ArpScanner _arpScanner;
     private readonly SavedScans _savedScans;
 
-    public event EventHandler ScanChanged;
+    public event EventHandler? ScanChanged;
 
     public ScanManager()
     {
@@ -27,7 +27,7 @@ public class ScanManager
         _savedScans.AddScanResult(scanResult);
         
     }
-
+    
     public ScanResult? GetLastScan()
     {
         if (_savedScans.Scans.Count == 0) return null;

@@ -12,7 +12,7 @@ public class Device : IEquatable<Device>
     {
         this.Ip = ip;
         this.Mac = mac;
-        this.Description = $"IP: {ip}\nMAC: {mac}";
+        this.Description = $"IP: {ip}, MAC: {mac}";
     }
     
     public override string ToString()

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetSniffer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a70408f4f8d0575a3fefb07635bfd22cdc4b53ee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ceb0c1a825391cf950baadf13480789ea11f6b3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetSniffer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetSniffer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
