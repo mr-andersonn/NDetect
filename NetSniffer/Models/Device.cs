@@ -2,7 +2,7 @@ using System;
 
 namespace NetSniffer.Models;
 
-public class Device : IComparable
+public class Device : IEquatable<Device>
 {
     public string Ip { get; private set;}
     public string Mac {get; private set;}
@@ -14,14 +14,17 @@ public class Device : IComparable
         this.Mac = mac;
         this.Description = $"IP: {ip}\nMAC: {mac}";
     }
-    override public string ToString()
+    
+    public override string ToString()
     {
         return $"if: {Ip}, mac: {Mac}, description: {Description}";
     }
-    public int CompareTo(object? obj) 
+    public bool Equals(Device? other)
     {
-        throw new NotImplementedException(); 
-        
-        // TODO: implement
+        if (other == null) return false;
+        return Ip == other.Ip && Mac == other.Mac;
     }
+    
+    public override bool Equals(object? obj) => Equals(obj as Device);
+    public override int GetHashCode() => HashCode.Combine(Ip, Mac);
 }

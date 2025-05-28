@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace NetSniffer.Models;
 
@@ -19,6 +20,19 @@ public class ScanResult : IComparable<ScanResult>
     
     public int CompareTo(ScanResult? other)
     {
-        throw new NotImplementedException();
+        if (other == null) return 1;
+        if (this.Devices.Count != other.Devices.Count) return 1;
+
+        var thisSorted = this.Devices.OrderBy(d => d.Mac).ToList();
+        var otherSorted = other.Devices.OrderBy(d => d.Mac).ToList();
+
+        for (int i = 0; i < thisSorted.Count; i++)
+        {
+            if (!thisSorted[i].Equals(otherSorted[i])) return 1;
+        }
+
+        return 0;
+
     }
+    
 }

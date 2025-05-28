@@ -24,7 +24,7 @@ public class SavedScans
         CompareScanContents(Scans?.Find(s => s.Id == _scanResultLastId),
             Scans.Find(s => s.Id == _scanResultLastId - 1));
     }
-
+    
     public void CompareScanContents(ScanResult f, ScanResult s)
     {
         if (f.CompareTo(s) != 0) changeDetected?.Invoke(this, EventArgs.Empty);
