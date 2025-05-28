@@ -1,5 +1,9 @@
 # NeoSniffer
 
+**⚠️ Status:** _In development — features may change._
+
+<br><br>
+
 **NeoSniffer** is a cross-platform network scanner built with C# and [Avalonia UI](https://avaloniaui.net/). It scans your local network using ARP and Ping to detect active devices, and displays them in a desktop interface.
 
 <br>
