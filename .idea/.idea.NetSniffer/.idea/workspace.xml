@@ -9,34 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/NetworkManagersTests/PingSweeperTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/NetworkManagersTests/PingSweeperTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/ref/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/ref/NetSniffer.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/refint/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/refint/NetSniffer.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Interfaces/IScanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Interfaces/IScanner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/NetworkInfoProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/NetworkInfoProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/PingSweeper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/PingSweeper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Scanners/ArpScanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Scanners/ArpScanner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Scanners/NmapScanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Scanners/NmapScanner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/ArpTableReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/ArpTableReader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +72,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.NetSniffer">
+  <component name="RunManager">
     <configuration name="NetSniffer" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -133,7 +110,8 @@
       <workItem from="1748342982274" duration="54000" />
       <workItem from="1748353962155" duration="10484000" />
       <workItem from="1748372789964" duration="7400000" />
-      <workItem from="1748386189470" duration="3481000" />
+      <workItem from="1748386189470" duration="3856000" />
+      <workItem from="1748431210657" duration="3715000" />
     </task>
     <servers />
   </component>
