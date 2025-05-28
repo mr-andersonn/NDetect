@@ -1,2 +1,46 @@
-# NeoSniffer
-This program will detect your excuse of a hacker if you invade my network and steal all your data. So you better don't!
+# NetSniffer
+
+**NetSniffer** is a cross-platform network scanner built with C# and [Avalonia UI](https://avaloniaui.net/). It scans your local network using ARP and Ping to detect active devices, and displays them in a desktop interface.
+
+> 🚀 Built in C#
+> 🎯 fast, extensible, and user-friendly
+
+---
+
+## 📸 Features
+
+- 🌐 **ARP-based LAN scanning** (fast, accurate on local network)
+- 📍 **Displays IP and MAC addresses** of all detected devices
+- 🧠 **Filters stale ARP entries** (only shows devices currently online)
+- 🔁 **One-click scanning** with a responsive Avalonia UI
+- 💾 **Scan history tracking** with change detection
+- ⚙️ Modular architecture (Scanner, SavedScans, ScanManager)
+- ✅ Cross-platform: works on **Linux**, **Windows**, and **macOS**
+
+---
+
+## 🛠 Requirements
+
+- [.NET 7.0 or later](https://dotnet.microsoft.com/download)
+- Avalonia UI runtime (bundled with app)
+- `nmap` (optional, for future advanced scanning)
+
+---
+
+## 🔧 How It Works
+
+1. **PingSweeper** pings all IPs in your subnet to trigger ARP responses
+2. **ArpTableReader** reads the ARP cache from the OS
+3. **FilterAliveDevices** confirms each device is still reachable
+4. **ScanManager** stores results and tracks changes over time
+
+---
+
+## 📦 Build & Run
+
+```bash
+git clone https://github.com/yourusername/NetSniffer.git
+cd NetSniffer
+dotnet restore
+dotnet run
+
