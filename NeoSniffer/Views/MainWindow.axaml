@@ -16,11 +16,21 @@
         <TextBlock Text="{Binding Description}"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
-        <Button Content="{Binding ButtonContent}"
-                Click="RunScan_Click"
-                VerticalContentAlignment="Center"
-                HorizontalContentAlignment="Center" />
         
+        <!-- Run / Stop buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="RunButton"
+                    Content="Run"
+                    Click="RunScan_Click"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center" />
+            <Button x:Name="StopButton"
+                    Content="Stop"
+                    Click="StopScan_Click"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center" />
+        </StackPanel>
+       
         
         <ItemsControl x:Name="DeviceList" Margin="25">
             <ItemsControl.ItemTemplate>

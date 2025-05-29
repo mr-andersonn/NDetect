@@ -8,19 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/avalonia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/ref/NetSniffer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/refint/NetSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/Avalonia/resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/ref/NeoSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/ref/NeoSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/refint/NeoSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/refint/NeoSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +127,7 @@
       <workItem from="1748386189470" duration="3856000" />
       <workItem from="1748431210657" duration="17146000" />
       <workItem from="1748458637610" duration="48000" />
+      <workItem from="1748537714743" duration="311000" />
     </task>
     <servers />
   </component>
