@@ -11,6 +11,8 @@
 
     <ItemGroup>
         <AvaloniaResource Include="Assets\**"/>
+        <AvaloniaXaml Remove="Styles\Styles.axaml" />
+        <AvaloniaResource Include="Styles\Styles.axaml" />
     </ItemGroup>
 
     <ItemGroup>

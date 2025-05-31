@@ -15,7 +15,7 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
-
+    
     private CancellationTokenSource? _cts;
     private async void RunScan_Click(object sender, RoutedEventArgs e)
     {

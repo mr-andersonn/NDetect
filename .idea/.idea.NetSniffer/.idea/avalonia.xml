@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="NeoSniffer/App.axaml" value="NeoSniffer/NeoSniffer.csproj" />
+        <entry key="NeoSniffer/Styles/Styles.axaml" value="NeoSniffer/NeoSniffer.csproj" />
         <entry key="NeoSniffer/Views/MainWindow.axaml" value="NeoSniffer/NeoSniffer.csproj" />
         <entry key="NetSniffer/App.axaml" value="NetSniffer/NetSniffer.csproj" />
         <entry key="NetSniffer/Views/MainWindow.axaml" value="NetSniffer/NetSniffer.csproj" />

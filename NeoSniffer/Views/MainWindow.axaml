@@ -8,41 +8,38 @@
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="NeoSniffer"
-        Width="800"
-        Height="500">
+        Classes="MainWindow">
 
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25">
          
         <TextBlock Text="{Binding Description}"
+                   Margin="15"
+                   FontSize="25"
+                   Foreground="White"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
-        
-        <!-- Run / Stop buttons -->
+
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="RunButton"
+                    Classes="Common RunButton"
                     Content="Run"
-                    Click="RunScan_Click"
-                    VerticalContentAlignment="Center"
-                    HorizontalContentAlignment="Center" />
+                    Click="RunScan_Click" />
             <Button x:Name="StopButton"
+                    Classes="Common StopButton"
                     Content="Stop"
-                    Click="StopScan_Click"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Center" />
+                    Click="StopScan_Click" />
         </StackPanel>
        
-        
         <ItemsControl x:Name="DeviceList" Margin="25">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding}" />
+                    <TextBlock Text="{Binding}"
+                               Margin="5"
+                               FontSize="15"
+                               Foreground="White"/>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
         
     </StackPanel>
-    
-    
-    
-    
 </Window>
