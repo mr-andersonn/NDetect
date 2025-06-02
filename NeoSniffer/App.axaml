@@ -10,6 +10,5 @@
 
     <Application.Styles>
         <FluentTheme />
-        <StyleInclude Source="avares://NeoSniffer/Styles/Styles.axaml"/>
     </Application.Styles>
 </Application>

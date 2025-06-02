@@ -14,8 +14,15 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+
+        ArpScanButton.Click += ArpScanButton_Click;
     }
-    
+
+    private void ArpScanButton_Click(object sender, RoutedEventArgs e)
+    {
+        
+    }
+        
     private CancellationTokenSource? _cts;
     private async void RunScan_Click(object sender, RoutedEventArgs e)
     {
@@ -52,4 +59,6 @@ public partial class MainWindow : Window
         _cts?.Cancel();
         StopButton.IsEnabled = false;
     }
+    
+    
 }
