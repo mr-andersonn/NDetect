@@ -12,8 +12,6 @@
       <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeoSniffer/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/App.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeoSniffer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/ViewModels/MainWindowViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml.cs" afterDir="false" />
@@ -57,6 +55,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/891c3835cdc04f89ba50992107489060ea00/7f/1734203d/ICommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a5cc8ddf36e8c8f422071f068cc8edb16e814991aa851aa131f3fa14425ed/Application.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d9677277995708e62f4fdd895f179695db5953fef873388ebb137d2af2ec8e8/Record.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e49d9521ff091d353928d1c44539ba0a4c93a9ebb2e65190880b4fe5eb8/StyledElement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f745171ac1d9709943357d18d6d284cbcde3d621ec6b1caff5ece86394b7d9a9/CompiledBindingExtension.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -71,28 +70,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.NetSniffer.executor": "Run",
-    "8c7ce4fe-494b-4efb-b642-fdaf0c005415.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.NetSniffer.executor&quot;: &quot;Run&quot;,
+    &quot;8c7ce4fe-494b-4efb-b642-fdaf0c005415.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PLAIN_TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="NetSniffer" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -140,7 +139,9 @@
       <workItem from="1748651184189" duration="4844000" />
       <workItem from="1748820342326" duration="2885000" />
       <workItem from="1748831775011" duration="387000" />
-      <workItem from="1748904573446" duration="310000" />
+      <workItem from="1748904573446" duration="1891000" />
+      <workItem from="1748908724449" duration="554000" />
+      <workItem from="1749141034801" duration="46000" />
     </task>
     <servers />
   </component>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NeoSniffer.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adaea2154c16ab4e409e5ed83b63288e8e6c3b48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+655ce2549feb3211d6d41c2dd146c3001395b663")]
 [assembly: System.Reflection.AssemblyProductAttribute("NeoSniffer.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NeoSniffer.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

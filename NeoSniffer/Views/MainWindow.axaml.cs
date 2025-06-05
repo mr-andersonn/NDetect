@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using NetSniffer.Models;
+using NetSniffer.ViewModels;
 
 namespace NetSniffer.Views;
 
@@ -15,14 +16,10 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
 
-        ArpScanButton.Click += ArpScanButton_Click;
+        DataContext = new MainWindowViewModel();
+
     }
 
-    private void ArpScanButton_Click(object sender, RoutedEventArgs e)
-    {
-        
-    }
-        
     private CancellationTokenSource? _cts;
     private async void RunScan_Click(object sender, RoutedEventArgs e)
     {
