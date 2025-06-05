@@ -9,9 +9,8 @@ namespace NetSniffer.ViewModels;
 public partial class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler? PropertyChanged;
-    
-    public string _description { get; set;  }= "";
 
+    public string _description { get; set; } = "";
     public string Description
     {
         get => _description;
@@ -25,29 +24,21 @@ public partial class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
         }
     }
     
-    public ICommand SetDescriptionCommandArp { get; }
-    public ICommand SetDescriptionCommandNmap { get; }
-    
+    public ICommand SetDescriptionCommand { get; }
     
     public MainWindowViewModel()
     {
-        SetDescriptionCommandArp = new MyCommand(() => SetDescriptionArp());
-        SetDescriptionCommandNmap = new MyCommand(() => SetDescriptionNmap());
+        SetDescriptionCommand = new MyCommand((parameter) => SetDescription(parameter));
     }
-    
-    private void SetDescriptionArp()
+
+    private void SetDescription(string? description)
     {
-        Description = "Current: ArpScan";
-    }
-    
-    private void SetDescriptionNmap()
-    {
-        Description = "Current: NmapScan";
+        Description = $"Current: {description}";
     }
     
 }
 
-public class MyCommand(Action a) : ICommand
+public class MyCommand(Action<string> a) : ICommand
 {
     
     public bool CanExecute(object? parameter)
@@ -57,7 +48,7 @@ public class MyCommand(Action a) : ICommand
 
     public void Execute(object? parameter)
     {
-        a();
+        a(parameter?.ToString() ?? "");
     }
     
     public event EventHandler? CanExecuteChanged;

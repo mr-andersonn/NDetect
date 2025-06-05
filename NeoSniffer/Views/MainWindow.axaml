@@ -15,7 +15,7 @@
     </Window.Styles>
 
     
-    <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="25" Background="Aqua">
+    <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Aqua">
          
         <StackPanel Background="DeepPink"
                     HorizontalAlignment="Stretch">
@@ -24,16 +24,17 @@
                        Text="Choose your type of scan"
                        HorizontalAlignment="Center"
                        Margin="0,0,0,25"/>
-            
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button x:Name="ArpScanButton"
-                        Command="{Binding SetDescriptionCommandArp }"
+                        Command="{Binding SetDescriptionCommand }"
                         Content="Arp"
-                        Classes="RunButton Common"/>
+                        Classes="RunButton Common"
+                        CommandParameter="ArpScan"/>
                 <Button x:Name="NmapScanButton"
-                        Command="{Binding SetDescriptionCommandNmap}"
+                        Command="{Binding SetDescriptionCommand}"
                         Content="Nmap"
-                        Classes="RunButton Common"/>
+                        Classes="RunButton Common"
+                        CommandParameter="NmapScan"/>
             </StackPanel>
             
             <TextBlock Text="{Binding Description}"
