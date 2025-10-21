@@ -6,7 +6,7 @@ namespace NeoSniffer.Tests.NetworkManagersTests;
 public class PingSweeperTest
 {
     [Fact]
-    public async Task Ping_Does_Not_Thorw_When_Pinging_Loopback()
+    public async Task Ping_Does_Not_Throw_When_Pinging_Loopback()
     {
         var sweeper = new PingSweeper();
         var addresses = new List<IPAddress> { IPAddress.Loopback };

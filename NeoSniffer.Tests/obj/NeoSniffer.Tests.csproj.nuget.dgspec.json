@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer.Tests/NeoSniffer.Tests.csproj": {}
+    "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer.Tests\\NeoSniffer.Tests.csproj": {}
   },
   "projects": {
-    "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer.Tests/NeoSniffer.Tests.csproj": {
+    "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer.Tests\\NeoSniffer.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer.Tests/NeoSniffer.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer.Tests\\NeoSniffer.Tests.csproj",
         "projectName": "NeoSniffer.Tests",
-        "projectPath": "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer.Tests/NeoSniffer.Tests.csproj",
-        "packagesPath": "/home/neo/.nuget/packages/",
-        "outputPath": "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer.Tests/obj/",
+        "projectPath": "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer.Tests\\NeoSniffer.Tests.csproj",
+        "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/neo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer/NeoSniffer.csproj": {
-                "projectPath": "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer/NeoSniffer.csproj"
+              "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer\\NeoSniffer.csproj": {
+                "projectPath": "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer\\NeoSniffer.csproj"
               }
             }
           }
@@ -81,26 +88,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/neo/.dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer/NeoSniffer.csproj": {
+    "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer\\NeoSniffer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer/NeoSniffer.csproj",
+        "projectUniqueName": "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer\\NeoSniffer.csproj",
         "projectName": "NeoSniffer",
-        "projectPath": "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer/NeoSniffer.csproj",
-        "packagesPath": "/home/neo/.nuget/packages/",
-        "outputPath": "/home/neo/Documents/Workspaces/Rider/NetSniffer/NeoSniffer/obj/",
+        "projectPath": "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer\\NeoSniffer.csproj",
+        "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anton\\Documents\\Workspaces\\Rider\\NDetective-Desktop\\NeoSniffer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/neo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -147,7 +161,7 @@
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.1, )"
+              "version": "[8.4.0, )"
             }
           },
           "imports": [
@@ -166,7 +180,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/neo/.dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

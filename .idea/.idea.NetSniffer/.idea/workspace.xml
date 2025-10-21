@@ -9,18 +9,57 @@
   <component name="ChangeListManager">
     <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/NetworkManagersTests/PingSweeperTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/NetworkManagersTests/PingSweeperTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/bin/Debug/net9.0/.msCoverageSourceRootsMapping_NeoSniffer.Tests" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/bin/Debug/net9.0/.msCoverageSourceRootsMapping_NeoSniffer.Tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping_NeoSniffer.Tests" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping_NeoSniffer.Tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/bin/Debug/net9.0/NeoSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/bin/Debug/net9.0/NeoSniffer.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/bin/Debug/net9.0/NeoSniffer.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/bin/Debug/net9.0/NeoSniffer.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/Debug/net9.0/NeoSniffer.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/NeoSniffer.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/NeoSniffer.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/NeoSniffer.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/NeoSniffer.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/NeoSniffer.Tests.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/NeoSniffer.Tests.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/NeoSniffer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/NeoSniffer.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/ViewModels/MainWindowViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/Views/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/bin/Debug/net9.0/NeoSniffer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/Avalonia/references" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/Avalonia/references" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/Avalonia/resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/NeoSniffer.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/ref/NeoSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/ref/NeoSniffer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/refint/NeoSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/Debug/net9.0/refint/NeoSniffer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/NeoSniffer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/NeoSniffer.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/NeoSniffer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/NeoSniffer.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/NeoSniffer.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/NeoSniffer.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeoSniffer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/NeoSniffer/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +85,9 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3487b1d537f14cec9b3ac0b48215f301e26400/a4/31fc6ddb/Object.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/891c3835cdc04f89ba50992107489060ea00/7f/1734203d/ICommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a5cc8ddf36e8c8f422071f068cc8edb16e814991aa851aa131f3fa14425ed/Application.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d9677277995708e62f4fdd895f179695db5953fef873388ebb137d2af2ec8e8/Record.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e49d9521ff091d353928d1c44539ba0a4c93a9ebb2e65190880b4fe5eb8/StyledElement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f745171ac1d9709943357d18d6d284cbcde3d621ec6b1caff5ece86394b7d9a9/CompiledBindingExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d894934a095de6eebed844639db3a3712da6a9142ac84dbab4de2182faf581/IPAddress.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NeoSniffer.Tests/NetworkManagersTests/ArpTableReaderTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NeoSniffer/ViewModels/MainWindowViewModel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -73,12 +109,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -138,6 +175,15 @@
       <workItem from="1748908724449" duration="554000" />
       <workItem from="1749141034801" duration="46000" />
       <workItem from="1749155646981" duration="1285000" />
+      <workItem from="1755172841155" duration="1826000" />
+      <workItem from="1755798192522" duration="5000" />
+      <workItem from="1756020178714" duration="60000" />
+      <workItem from="1756020270868" duration="8000" />
+      <workItem from="1756043420588" duration="466000" />
+      <workItem from="1756043899031" duration="691000" />
+      <workItem from="1756302497102" duration="1000" />
+      <workItem from="1756365875498" duration="23000" />
+      <workItem from="1761064931447" duration="1485000" />
     </task>
     <servers />
   </component>
