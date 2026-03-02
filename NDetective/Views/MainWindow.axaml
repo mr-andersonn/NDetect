@@ -10,11 +10,51 @@
         Title="NDetective"
         Classes="MainWindow">
     
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
     <Window.Styles>
         <StyleInclude Source="avares://NDetective/Styles/Styles.axaml"/>
     </Window.Styles>
-
     
+
+
+    <SplitView IsPaneOpen="{Binding IsPaneOpen}"
+               OpenPaneLength="200"
+               CompactPaneLength="60"
+               DisplayMode="CompactInline"
+               Background="#1e1e1e">
+        
+        <!-- This is the menu. -->
+        <SplitView.Pane>
+            <StackPanel Spacing="10"
+                        Margin="5">
+                <TextBlock Text="Menu"
+                           Foreground="White" 
+                           HorizontalAlignment="Center"
+                           Margin="16"/>
+                <Button Command="{Binding HideOpenMenuCommand}"
+                        Foreground="White"
+                        Background="#1f1f1f">Explorer</Button>
+                <ListBox Background="#1f1f1f"
+                         Foreground="White">
+                    <ListBoxItem>Search</ListBoxItem>
+                    <ListBoxItem>Devices</ListBoxItem>
+                    <ListBoxItem>Settings</ListBoxItem>
+                </ListBox>
+            </StackPanel>
+        </SplitView.Pane>
+        
+        
+        <!-- This is the main window that changes-->
+        <SplitView.Content>
+            <Border CornerRadius="12 0 0 0"
+                    Background="#1d1d1d">
+                <TransitioningContentControl Content="{Binding CurrentPage}" />
+            </Border>
+        </SplitView.Content>
+    </SplitView>
     
     
 
