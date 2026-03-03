@@ -33,4 +33,5 @@ public class ScanManager
 
     public IEnumerable<Device> GetDevices() => CsvDeviceManager.LoadDevices();
     
+    
 }
