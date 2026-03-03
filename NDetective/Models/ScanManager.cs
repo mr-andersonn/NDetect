@@ -1,45 +1,30 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace NDetective.Models;
 
 public class ScanManager
 {
-    private readonly ArpScanner _arpScanner;
-    private readonly SavedScans _savedScans;
-    private readonly CsvDeviceManager _csvDeviceManager;
+    private readonly ArpScanner _arpScanner = new();
 
-    public event EventHandler? ScanChanged;
+    private ScanResult? LastScan { get; set; }
 
-    public ScanManager()
-    {
-        _arpScanner = new ArpScanner();
-        _savedScans = new SavedScans();
-        _csvDeviceManager = new CsvDeviceManager();
-        
-        _savedScans.changeDetected += (s, e) => ScanChanged?.Invoke(s, e);
-    }
-    
     public async Task RunArpScan()
     {
-        // Run scanA
-        ScanResult scanResult = await _arpScanner.RunScan();
+        // Run scan
+        LastScan = await _arpScanner.RunScan();
         
-        // Update SavedScans
-        _savedScans.AddScanResult(scanResult);
-        
-        
-        //Add to CSV
-        _csvDeviceManager.SaveDevices(scanResult.Devices);
-
     }
-    
-    public ScanResult? GetLastScan()
+
+    public void SaveLastScanDevicesToCsv()
     {
-        if (_savedScans.Scans.Count == 0) return null;
-        return _savedScans.Scans[^1];
+        if (LastScan is null) return;
+        
+        // else add to CSV
+        CsvDeviceManager.SaveDevices(LastScan.Devices);
     }
 
-    public SavedScans GetAllScans() => _savedScans;
-
+    public IEnumerable<Device> GetDevice() => CsvDeviceManager.LoadDevices();
+    
 }

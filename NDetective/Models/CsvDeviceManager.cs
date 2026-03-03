@@ -5,12 +5,12 @@ using System.Text;
 
 namespace NDetective.Models;
 
-public class CsvDeviceManager
+public static class CsvDeviceManager
 {
 
     private static readonly string DevicesPath = Path.Combine(AppContext.BaseDirectory, "Assets", "Database", "devices.csv");
     
-    public void SaveDevices(IEnumerable<Device> devices)
+    public static void SaveDevices(IEnumerable<Device> devices)
     {
         
         var sb = new StringBuilder();
@@ -27,7 +27,7 @@ public class CsvDeviceManager
         File.WriteAllText(DevicesPath, sb.ToString(), Encoding.UTF8);
     }
 
-    public IEnumerable<Device> LoadDevices()
+    public static IEnumerable<Device> LoadDevices()
     {
         
         var devices = new List<Device>();
