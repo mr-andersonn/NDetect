@@ -19,6 +19,8 @@ public partial class SearchPageViewModel : ViewModelBase
     [RelayCommand]
     private async Task Scan()
     {
+        displayedDevices.Clear();
+        
         await _scanManager.RunArpScan();
         
         Devices.Clear();

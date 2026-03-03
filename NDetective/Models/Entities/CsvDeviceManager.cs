@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace NDetective.Models;
@@ -12,21 +13,59 @@ public static class CsvDeviceManager
     
     public static void SaveDevices(IEnumerable<Device> devices)
     {
-        Console.WriteLine("Csv path = " + DevicesPath);
-        Console.WriteLine("BaseDir  = " + AppContext.BaseDirectory);
+        EnsureCsvFileExists();
         
-        var sb = new StringBuilder();
-
-        sb.AppendLine("IP,MAC");
-
         foreach (var d in devices)
         {
-            sb.AppendLine(string.Join(",", d.Ip, d.Mac));
+            SaveDevice(d);
         }
+    }
+
+    public static void SaveDevice(Device d)
+    {
+        EnsureCsvFileExists();
+        if (DeviceExists(d)) return;
+
+        var line = $"{d.Ip},{d.Mac}" + Environment.NewLine;
+        File.AppendAllText(DevicesPath, line, Encoding.UTF8);
+    }
+
+    public static void DeleteDevice(Device d)
+    { 
+        EnsureCsvFileExists();
+        if (!DeviceExists(d)) return;
+        
+        
+    }
+
+    private static bool DeviceExists(Device d)
+    {
+        if(string.IsNullOrWhiteSpace(d.Mac)) return true;
+
+        foreach (var line in File.ReadAllLines(DevicesPath, Encoding.UTF8))
+        {
+            if (string.IsNullOrEmpty(line)) continue;
+
+            var parts = line.Split(',');
+
+            if (parts.Length == 0) continue;
+
+            var macInFile = parts[1].Trim();
+
+            if (string.Equals(macInFile, d.Mac.Trim(), StringComparison.OrdinalIgnoreCase)) return true;
+        }
+
+        return false;
+    }
+
+    private static void EnsureCsvFileExists()
+    {
+        if (File.Exists(DevicesPath)) return;
         
         Directory.CreateDirectory(Path.GetDirectoryName(DevicesPath)!);
-        
-        File.WriteAllText(DevicesPath, sb.ToString(), Encoding.UTF8);
+
+        using var writer = new StreamWriter(DevicesPath, false, Encoding.UTF8);
+        writer.WriteLine("IP, MAC");
     }
 
     public static IEnumerable<Device> LoadDevices()

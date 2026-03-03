@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective.Tests\\NDetective.Tests.csproj": {}
+    "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective.Tests\\NDetective.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective.Tests\\NDetective.Tests.csproj": {
+    "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective.Tests\\NDetective.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective.Tests\\NDetective.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective.Tests\\NDetective.Tests.csproj",
         "projectName": "NDetective.Tests",
-        "projectPath": "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective.Tests\\NDetective.Tests.csproj",
+        "projectPath": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective.Tests\\NDetective.Tests.csproj",
         "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective.Tests\\obj\\",
+        "outputPath": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective\\NDetective.csproj": {
-                "projectPath": "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective\\NDetective.csproj"
+              "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective\\NDetective.csproj": {
+                "projectPath": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective\\NDetective.csproj"
               }
             }
           }
@@ -48,7 +49,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -87,18 +88,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective\\NDetective.csproj": {
+    "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective\\NDetective.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective\\NDetective.csproj",
+        "projectUniqueName": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective\\NDetective.csproj",
         "projectName": "NDetective",
-        "projectPath": "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective\\NDetective.csproj",
+        "projectPath": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective\\NDetective.csproj",
         "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective\\obj\\",
+        "outputPath": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -113,6 +114,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -131,7 +133,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -178,7 +180,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

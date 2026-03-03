@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jGL6wjiXSX8=",
+  "dgSpecHash": "PyLryeLqQ+A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\anton\\Documents\\GitHub\\NDetective-Desktop\\NDetective\\NDetective.csproj",
+  "projectFilePath": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective\\NDetective.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anton\\.nuget\\packages\\avalonia\\11.3.0\\avalonia.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.22045.20230930\\avalonia.angle.windows.natives.2.1.22045.20230930.nupkg.sha512",
