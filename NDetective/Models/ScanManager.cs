@@ -8,7 +8,7 @@ public class ScanManager
 {
     private readonly ArpScanner _arpScanner = new();
 
-    private ScanResult? LastScan { get; set; }
+    public ScanResult? LastScan { get; private set; }
 
     public async Task RunArpScan()
     {
@@ -19,12 +19,18 @@ public class ScanManager
 
     public void SaveLastScanDevicesToCsv()
     {
-        if (LastScan is null) return;
+        if (LastScan is null) throw new InvalidOperationException("No scan has been run yet");
+
+        foreach (var device in LastScan.Devices)
+        {
+            Console.WriteLine(device.Description);
+        }
+        
         
         // else add to CSV
         CsvDeviceManager.SaveDevices(LastScan.Devices);
     }
 
-    public IEnumerable<Device> GetDevice() => CsvDeviceManager.LoadDevices();
+    public IEnumerable<Device> GetDevices() => CsvDeviceManager.LoadDevices();
     
 }

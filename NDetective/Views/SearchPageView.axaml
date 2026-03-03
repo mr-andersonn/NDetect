@@ -2,67 +2,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:NDetective.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="NDetective.Views.SearchPageView">
+             x:Class="NDetective.Views.SearchPageView"
+             x:DataType="vm:SearchPageViewModel">
     
-    <StackPanel HorizontalAlignment="Stretch">
-        <TextBlock Text="Search" />
+    <StackPanel HorizontalAlignment="Stretch"
+                Margin="16"
+                Spacing="10">
+        <TextBlock Text="Search" FontSize="20"/>
         
+        <StackPanel HorizontalAlignment="Stretch"
+                    Orientation="Horizontal"
+                    Spacing="10">
+            <Button FontSize="18" Command="{Binding ScanCommand}">Scan</Button>
+            <Button FontSize="18" Command="{Binding SaveCommand}">Save</Button>
+        </StackPanel>
+        
+            
+        <ItemsControl ItemsSource="{Binding Devices}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Spacing="10">
+                        <TextBlock Text="{Binding Ip}" FontSize="15" />
+                        <TextBlock Text="{Binding Mac}" FontSize="15" />
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </StackPanel>
-    
-</UserControl>
 
     
-    <!-- <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Aqua"> -->
-    <!-- -->
-    <!--     <StackPanel Background="DeepPink" -->
-    <!--                 HorizontalAlignment="Stretch"> -->
-    <!--         <TextBlock FontSize="25" -->
-    <!--                    Foreground="#00FF00" -->
-    <!--                    Text="Choose your type of scan" -->
-    <!--                    HorizontalAlignment="Center" -->
-    <!--                    Margin="0,0,0,25"/> -->
-    <!--         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"> -->
-    <!--             <Button x:Name="ArpScanButton" -->
-    <!--                     Command="{Binding SetDescriptionCommand }" -->
-    <!--                     Content="Arp" -->
-    <!--                     Classes="RunButton Common" -->
-    <!--                     CommandParameter="ArpScan"/> -->
-    <!--             <Button x:Name="NmapScanButton" -->
-    <!--                     Command="{Binding SetDescriptionCommand}" -->
-    <!--                     Content="Nmap" -->
-    <!--                     Classes="RunButton Common" -->
-    <!--                     CommandParameter="NmapScan"/> -->
-    <!--         </StackPanel> -->
-    <!-- -->
-    <!--         <TextBlock Text="{Binding Description}" -->
-    <!--                    Margin="15" -->
-    <!--                    FontSize="25" -->
-    <!--                    Foreground="White" -->
-    <!--                    HorizontalAlignment="Center" -->
-    <!--                    VerticalAlignment="Center"/> -->
-    <!-- -->
-    <!--     </StackPanel> -->
-    <!-- -->
-    <!--     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,25,0,0"> -->
-    <!--         <Button x:Name="RunButton" -->
-    <!--                 Classes="Common RunButton" -->
-    <!--                 Content="Run"/> -->
-    <!--         <Button x:Name="StopButton" -->
-    <!--                 Classes="Common StopButton" -->
-    <!--                 Content="Stop"/> -->
-    <!--     </StackPanel> -->
-    <!-- -->
-    <!--     <ItemsControl x:Name="DeviceList" Margin="25" > -->
-    <!--         <ItemsControl.ItemTemplate> -->
-    <!--             <DataTemplate> -->
-    <!--                 <TextBlock Text="{Binding}" -->
-    <!--                            HorizontalAlignment="Center" -->
-    <!--                            Margin="5" -->
-    <!--                            FontSize="15" -->
-    <!--                            Foreground="Black"/> -->
-    <!--             </DataTemplate> -->
-    <!--         </ItemsControl.ItemTemplate> -->
-    <!--     </ItemsControl> -->
-    <!-- -->
-    <!-- </StackPanel> -->
+</UserControl>

@@ -2,12 +2,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:NDetective.Views"
+             xmlns:viewModels="clr-namespace:NDetective.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="NDetective.Views.DevicesPageView">
+             x:Class="NDetective.Views.DevicesPageView"
+             x:DataType="viewModels:DevicesPageViewModel">
     
-    <StackPanel HorizontalAlignment="Stretch">
-        <TextBlock Text="Devices" />
+    <Grid Margin="16" RowDefinitions="Auto,*">
+        <TextBlock Grid.Row="0" Text="Saved Devices" FontSize="20" Margin="0,0,0,10"/>
         
-    </StackPanel>
+        <Grid Grid.Row="1">
+            <ItemsControl ItemsSource="{Binding Devices}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="{Binding Ip}" FontSize="15" />
+                            <TextBlock Text="{Binding Mac}" FontSize="15" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            
+            <Button Content="AddDevice"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,0,0"/>
+        </Grid>
+        
+
+    </Grid>
+    
+    
     
 </UserControl>

@@ -5,9 +5,9 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="NDetective.Views.SettingsPageView">
     
-    <StackPanel HorizontalAlignment="Stretch">
-        <TextBlock Text="Settings" />
-        
-    </StackPanel>
+    <Grid Margin="16" RowDefinitions="Auto,*" RowSpacing="10">
+        <TextBlock Grid.Row="0" Text="Settings" FontSize="20"/>
+        <TextBlock Grid.Row="1" Text="Under development" FontSize="15"/>
+    </Grid>
     
 </UserControl>

@@ -8,10 +8,12 @@ namespace NDetective.Models;
 public static class CsvDeviceManager
 {
 
-    private static readonly string DevicesPath = Path.Combine(AppContext.BaseDirectory, "Assets", "Database", "devices.csv");
+    private static readonly string DevicesPath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "Assets", "Database", "devices.csv");
     
     public static void SaveDevices(IEnumerable<Device> devices)
     {
+        Console.WriteLine("Csv path = " + DevicesPath);
+        Console.WriteLine("BaseDir  = " + AppContext.BaseDirectory);
         
         var sb = new StringBuilder();
 
