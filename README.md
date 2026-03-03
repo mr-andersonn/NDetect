@@ -15,10 +15,8 @@
 
 ## 📸 Features
 
-- 🌐 **ARP-based LAN scanning** (fast, accurate on local network)
+- 🌐 **ARP-based LAN scanning**
 - 📍 **Displays IP and MAC addresses** of all detected devices
-- 🧠 **Filters stale ARP entries** (only shows devices currently online)
-- 🔁 **One-click scanning** with a responsive Avalonia UI
 - 💾 **Scan history tracking** with change detection
 - ✅ Cross-platform: works on **Linux**, **Windows**, and **macOS**
 
@@ -27,12 +25,11 @@
 ## 🛠 Requirements
 
 - [.NET 7.0 or later](https://dotnet.microsoft.com/download)
-- Avalonia UI runtime (bundled with app)
 
 <br><br>
 
 ## 📦 Build & Run 
 
-Currently there is no executable but the project can be opened with Rider/VS and run from there.
+Currently there is no executable but the project can be opened with Rider / VS and run from there.
 
 
