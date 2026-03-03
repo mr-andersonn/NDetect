@@ -6,7 +6,7 @@
         mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
         x:Class="NDetective.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
+        Icon="/Assets/NDetectiveIcon.ico"
         Title="NDetective"
         Classes="MainWindow">
     
@@ -22,7 +22,7 @@
 
     <SplitView IsPaneOpen="{Binding IsPaneOpen}"
                OpenPaneLength="200"
-               CompactPaneLength="60"
+               CompactPaneLength="50"
                DisplayMode="CompactInline"
                Background="#1e1e1e">
         
@@ -30,29 +30,31 @@
         <SplitView.Pane>
             <StackPanel Spacing="10"
                         Margin="5">
-                <TextBlock Text="Menu"
-                           Foreground="White" 
-                           HorizontalAlignment="Center"
-                           Margin="16"/>
                 <Button Command="{Binding HideOpenMenuCommand}"
-                        Foreground="White"
-                        Background="#1f1f1f">Explorer</Button>
-                <ListBox ItemsSource="{Binding Items}" 
+                        Background="#1f1f1f">
+                    <PathIcon Data="{Binding CurrentPaneIcon}"></PathIcon>
+                </Button>
+                
+                <!-- Structure for the list of items in the menu. It gets the items from the ListItemTemplate-->
+                <ListBox ItemsSource="{Binding Items}"
+                         SelectedItem="{Binding SelectedListItem}"
                         Background="#1f1f1f"
                          Foreground="White">
                     <ListBox.ItemTemplate>
                         <DataTemplate DataType="{x:Type vm:ListItemTemplate}">
                             <StackPanel Spacing="15" Orientation="Horizontal">
+                                <PathIcon Data="{Binding ListItemIcon}"/>
                                 <TextBlock Text="{Binding Label}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
+                
             </StackPanel>
         </SplitView.Pane>
         
         
-        <!-- This is the main window that changes-->
+        <!-- This is the main window that changes -->
         <SplitView.Content>
             <Border CornerRadius="12 0 0 0"
                     Background="#1d1d1d">

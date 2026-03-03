@@ -8,7 +8,6 @@ public class ArpScanner : IScanner
 {
     public async Task<ScanResult> RunScan()
     {
-        //throw new System.NotImplementedException();
         
         // Phase 1: Get subnet range
         var networkProvider = new NetworkInfoProvider();

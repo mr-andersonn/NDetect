@@ -10,5 +10,6 @@
 
     <Application.Styles>
         <FluentTheme />
+        <StyleInclude Source="avares://NDetective/Assets/icons.axaml" />
     </Application.Styles>
 </Application>
