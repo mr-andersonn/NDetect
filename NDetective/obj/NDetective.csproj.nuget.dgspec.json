@@ -74,6 +74,10 @@
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.4.0, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[11.0.0-preview.1.26104.118, )"
             }
           },
           "imports": [
