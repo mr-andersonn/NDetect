@@ -16,7 +16,7 @@
                     Orientation="Horizontal"
                     Spacing="10">
             <Button FontSize="18" Command="{Binding ScanCommand}">Scan</Button>
-            <Button FontSize="18" Command="{Binding SaveCommand}">Save</Button>
+            <Button FontSize="18" Command="{Binding SaveCommand}">Save All</Button>
         </StackPanel>
         
             

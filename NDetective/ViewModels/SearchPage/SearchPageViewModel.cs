@@ -40,6 +40,6 @@ public partial class SearchPageViewModel : ViewModelBase
     [RelayCommand]
     private void Save()
     {
-        _scanManager.SaveLastScanDevicesToCsv();
+        _scanManager.SaveLastScanDevices();
     }
 }

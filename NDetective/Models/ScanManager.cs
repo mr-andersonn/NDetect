@@ -17,7 +17,7 @@ public class ScanManager
         
     }
 
-    public void SaveLastScanDevicesToCsv()
+    public void SaveLastScanDevices()
     {
         if (LastScan is null) throw new InvalidOperationException("No scan has been run yet");
 
