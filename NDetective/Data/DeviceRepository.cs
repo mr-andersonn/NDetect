@@ -5,10 +5,10 @@ using NDetective.Models;
 
 namespace NDetective.Data;
 
-public class DeviceRepository
+public static class DeviceRepository
 {
     
-    public void Add(Device d)
+    public static void Add(Device d)
     {
         using var connection = new SqliteConnection(Database.ConnectionString);
         connection.Open();
@@ -16,7 +16,8 @@ public class DeviceRepository
         using var command = connection.CreateCommand();
         command.CommandText = """
                               INSERT INTO Devices(Ip, Mac, Description)
-                              VALUES($ip, $mac, $description);
+                              VALUES($ip, $mac, $description)
+                              ON CONFLICT(Mac) DO NOTHING;
                               """;
         command.Parameters.AddWithValue($"ip", d.Ip);
         command.Parameters.AddWithValue($"mac", d.Mac);
@@ -25,12 +26,17 @@ public class DeviceRepository
         command.ExecuteNonQuery();
     }
 
-    public void AddAll(IEnumerable<Device> ds)
+    public static void AddAll(IEnumerable<Device> ds)
     {
-        throw new NotImplementedException();
+        // TEMPORARY SOLUTION 
+
+        foreach (var d in ds)
+        {
+            Add(d);
+        }
     }
 
-    public Device? GetByMac(string mac)
+    public static Device? GetByMac(string mac)
     {
         using var connection = new SqliteConnection(Database.ConnectionString);
         connection.Open();
@@ -60,12 +66,37 @@ public class DeviceRepository
 
     }
 
-    public IEnumerable<Device> GetAll()
+    public static IEnumerable<Device> GetAll()
     {
-        throw new NotImplementedException();
-    }
 
-    public void Update(Device d)
+        var devices = new List<Device>();
+        
+        using var connection = new SqliteConnection(Database.ConnectionString);
+        connection.Open();
+
+        using var command = connection.CreateCommand();
+
+        command.CommandText = """
+                              SELECT Ip,Mac,Description
+                              FROM Devices;
+                              """;
+        using var reader = command.ExecuteReader();
+
+        while (reader.Read())
+        {
+            var ip = reader.GetString(0);
+            var mac = reader.GetString(1);
+            var description = reader.IsDBNull(2) ? string.Empty : reader.GetString(2);
+            
+            devices.Add(new Device(ip, mac));
+        }
+        
+        return devices;
+        
+    }
+    
+
+    public static void Update(Device d)
     {
         using var connection = new SqliteConnection(Database.ConnectionString);
         connection.Open();
@@ -85,7 +116,7 @@ public class DeviceRepository
         command.ExecuteNonQuery();
     }
 
-    public void Delete(Device d)
+    public static void Delete(Device d)
     {
         using var connection = new SqliteConnection(Database.ConnectionString);
         connection.Open();

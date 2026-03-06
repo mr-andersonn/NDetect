@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using NDetective.Data;
 
 namespace NDetective.Models;
 
@@ -20,18 +21,12 @@ public class ScanManager
     public void SaveLastScanDevices()
     {
         if (LastScan is null) throw new InvalidOperationException("No scan has been run yet");
-
-        foreach (var device in LastScan.Devices)
-        {
-            Console.WriteLine(device.Description);
-        }
-        
         
         // else add to CSV
-        CsvDeviceManager.SaveDevices(LastScan.Devices);
+        DeviceRepository.AddAll(LastScan.Devices);
     }
 
-    public IEnumerable<Device> GetDevices() => CsvDeviceManager.LoadDevices();
-    
-    
+    public IEnumerable<Device> GetDevices() => DeviceRepository.GetAll();
+
+
 }
