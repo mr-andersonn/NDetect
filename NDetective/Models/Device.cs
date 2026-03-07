@@ -4,25 +4,28 @@ namespace NDetective.Models;
 
 public class Device : IEquatable<Device>
 {
-    public string Ip { get; private set;}
+    public string Ip { get; set;}
     public string Mac {get; private set;}
+    
+    public string Name { get; set; }
     public string Description {get; set;}
 
-    public Device(string ip, string mac)
+    public Device(string ip, string mac, string name = "Add Device Name", string description = $"Add description")
     {
         this.Ip = ip;
         this.Mac = mac;
-        this.Description = $"IP: {ip}, MAC: {mac}";
+        this.Name = name;
+        this.Description = description;
     }
     
     public override string ToString()
     {
-        return $"if: {Ip}, mac: {Mac}, description: {Description}";
+        return $"if: {Ip}, mac: {Mac}, name: {Name}, description: {Description}";
     }
     public bool Equals(Device? other)
     {
         if (other == null) return false;
-        return Ip == other.Ip && Mac == other.Mac;
+        return Mac == other.Mac;
     }
     
     public override bool Equals(object? obj) => Equals(obj as Device);

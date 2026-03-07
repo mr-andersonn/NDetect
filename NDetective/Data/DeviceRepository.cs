@@ -15,12 +15,13 @@ public static class DeviceRepository
 
         using var command = connection.CreateCommand();
         command.CommandText = """
-                              INSERT INTO Devices(Ip, Mac, Description)
-                              VALUES($ip, $mac, $description)
+                              INSERT INTO Devices(Ip, Mac, Name, Description)
+                              VALUES($ip, $mac, $name, $description)
                               ON CONFLICT(Mac) DO NOTHING;
                               """;
         command.Parameters.AddWithValue($"ip", d.Ip);
         command.Parameters.AddWithValue($"mac", d.Mac);
+        command.Parameters.AddWithValue($"name", d.Name);
         command.Parameters.AddWithValue($"description", d.Description ?? string.Empty);
 
         command.ExecuteNonQuery();
@@ -43,7 +44,7 @@ public static class DeviceRepository
         
         using var command = connection.CreateCommand();
         command.CommandText = """
-                              SELECT Ip, Mac, Description
+                              SELECT Ip, Mac, Name, Description
                               FROM Devices
                               WHERE Mac = @mac;
                               """;
@@ -55,12 +56,10 @@ public static class DeviceRepository
         if (!reader.Read()) return null;
         var foundIp = reader.GetString(0);
         var foundMac = reader.GetString(1);
-        var foundDescription = reader.IsDBNull(2) ? string.Empty : reader.GetString(2);
+        var foundName = reader.GetString(2);
+        var foundDescription = reader.IsDBNull(3) ? string.Empty : reader.GetString(2);
 
-        var device = new Device(foundIp, foundMac)
-        {
-            Description = foundDescription
-        };
+        var device = new Device(foundIp, foundMac, foundName, foundDescription);
         
         return device;
 
@@ -77,7 +76,7 @@ public static class DeviceRepository
         using var command = connection.CreateCommand();
 
         command.CommandText = """
-                              SELECT Ip,Mac,Description
+                              SELECT Ip,Mac,Name,Description
                               FROM Devices;
                               """;
         using var reader = command.ExecuteReader();
@@ -86,9 +85,10 @@ public static class DeviceRepository
         {
             var ip = reader.GetString(0);
             var mac = reader.GetString(1);
-            var description = reader.IsDBNull(2) ? string.Empty : reader.GetString(2);
+            var name = reader.GetString(2);
+            var description = reader.IsDBNull(3) ? string.Empty : reader.GetString(3);
             
-            devices.Add(new Device(ip, mac));
+            devices.Add(new Device(ip, mac, name,description));
         }
         
         return devices;
@@ -104,13 +104,15 @@ public static class DeviceRepository
         using var command = connection.CreateCommand();
         command.CommandText = """
                               UPDATE Devices
-                              SET Ip = @ip, 
+                              SET Ip = @ip,
+                                  Name = @name,
                                   Description = @description
                               WHERE Mac = @mac;
                               """;
         
         command.Parameters.AddWithValue($"ip", d.Ip);
         command.Parameters.AddWithValue($"mac", d.Mac);
+        command.Parameters.AddWithValue($"name", d.Name);
         command.Parameters.AddWithValue($"description", d.Description ?? string.Empty);
 
         command.ExecuteNonQuery();

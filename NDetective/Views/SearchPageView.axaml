@@ -22,10 +22,12 @@
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Spacing="10">
-                            <TextBlock Text="{Binding Device.Description}"
+                            <TextBlock Text="{Binding Device.Mac}"
                                        Foreground="{Binding Foreground}"
                                        FontSize="15"/>
-                            
+                            <TextBlock Text="{Binding Device.Ip}"
+                                       Foreground="{Binding Foreground}"
+                                       FontSize="15"/>
                         </StackPanel>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>

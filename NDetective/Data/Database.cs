@@ -16,7 +16,8 @@ public class Database
         command.CommandText = @"CREATE TABLE IF NOT EXISTS Devices (
                                 Id INTEGER PRIMARY KEY AUTOINCREMENT,
                                 Ip TEXT NOT NULL,
-                                Mac TEXT UNIQUE, 
+                                Mac TEXT UNIQUE,
+                                Name TEXT, 
                                 Description TEXT);";
         
         command.ExecuteNonQuery();

@@ -7,6 +7,7 @@ namespace NDetective.Views;
 
 public partial class DevicesPageView : UserControl
 {
+    private EditDeviceWindow? _editWindow;
     public DevicesPageView()
     {
         InitializeComponent();
@@ -14,19 +15,29 @@ public partial class DevicesPageView : UserControl
 
     private void OpenEditDeviceWindow(object? sender, RoutedEventArgs e)
     {
-        if (sender is Button button)
+        if (_editWindow is not null)
         {
-            var editWindow = new EditDeviceWindow();
-
-            var screenPoint = button.PointToScreen(new Point(0, 0));
-
-            editWindow.Position = new PixelPoint(
-                (int) (screenPoint.X + button.Bounds.Width * 1.5),
-                (int)screenPoint.Y);
-            
-            editWindow.Show();   
+            _editWindow.Activate();
+            return;
         }
-        
 
+        _editWindow = new EditDeviceWindow();
+        
+            if (sender is Button button)
+            {
+                var screenPoint = button.PointToScreen(new Point(0, 0));
+            
+                _editWindow.Position = new PixelPoint(
+                    (int) (screenPoint.X + button.Bounds.Width * 1.5),
+                    (int) screenPoint.Y);
+            }  
+            
+            _editWindow.Closed += (_, _) =>
+            {
+                _editWindow = null;
+            };
+            
+            _editWindow.Show();  
+            
     }
 }
