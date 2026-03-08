@@ -29,7 +29,10 @@ public static class DeviceRepository
 
     public static void AddAll(IEnumerable<Device> ds)
     {
-        // TEMPORARY SOLUTION 
+        // TEMPORARY SOLUTION
+        
+        // since 05.03.2026
+        // "Temporary solutions that work are the most permanent solutions" @Confucius
 
         foreach (var d in ds)
         {

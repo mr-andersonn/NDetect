@@ -1,10 +1,32 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using NDetective.Models;
 
 namespace NDetective.ViewModels;
 
-public class EditDeviceViewModel : ViewModelBase
+public partial class EditDeviceViewModel : ViewModelBase
 {
-    public object SelectedDeviceMac { get; }
-    public object SelectedDeviceIp { get; }
-    public object WindowTitle { get; }
+
+    [ObservableProperty] private Device _selectedDevice;
+
+    [ObservableProperty] private string _windowTitle;
+
+    private string Name;
+    
+    private string Description;
+    
+
+    public EditDeviceViewModel(Device device)
+    {
+        SelectedDevice = device;
+        
+        WindowTitle = $"Editing device: {SelectedDevice.Name}";
+    }
+
+
+    [RelayCommand]
+    public void UpdateDevice()
+    {
+        
+    }
 }

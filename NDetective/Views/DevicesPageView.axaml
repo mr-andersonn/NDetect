@@ -6,6 +6,7 @@
              xmlns:viewModels="clr-namespace:NDetective.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="NDetective.Views.DevicesPageView"
+             x:Name="Root"
              x:DataType="viewModels:DevicesPageViewModel">
     
     <Grid Margin="16" RowDefinitions="Auto,*">

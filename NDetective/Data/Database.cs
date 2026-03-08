@@ -9,7 +9,7 @@ public class Database
     public static void InitializeDatabase()
     {
         using var connection = new SqliteConnection("Data Source=ndetective.db");
-        connection.Open();
+        connection.Open(); 
 
         var command = connection.CreateCommand();
 
