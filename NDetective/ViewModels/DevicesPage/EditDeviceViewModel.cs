@@ -11,14 +11,13 @@ public partial class EditDeviceViewModel : ViewModelBase
 {
 
     [ObservableProperty] private Device _selectedDevice;
-
     [ObservableProperty] private string _deviceName;
     [ObservableProperty] private string _deviceDescription;
-    
     [ObservableProperty] private string _windowTitle;
-
-    public event Action<Device>? DeviceUpdated;
+    
     public event Action? RequestClose;
+    public event Action? DeviceDeleted;
+    
 
     public EditDeviceViewModel(Device device)
     {
@@ -38,7 +37,6 @@ public partial class EditDeviceViewModel : ViewModelBase
         SelectedDevice.Description = DeviceDescription;
         
         DeviceRepository.Update(SelectedDevice);
-        DeviceUpdated?.Invoke(SelectedDevice);
         RequestClose?.Invoke();
     }
 
@@ -46,6 +44,7 @@ public partial class EditDeviceViewModel : ViewModelBase
     public void DeleteDevice()
     {
         DeviceRepository.Delete(SelectedDevice);
+        DeviceDeleted?.Invoke();
         RequestClose?.Invoke();
     }
 }

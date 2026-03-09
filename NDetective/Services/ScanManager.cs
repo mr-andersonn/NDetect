@@ -26,7 +26,4 @@ public class ScanManager
         DeviceRepository.AddAll(LastScan.Devices);
     }
 
-    public IEnumerable<Device> GetDevices() => DeviceRepository.GetAll();
-
-
 }

@@ -37,6 +37,7 @@
             
             <Button Content="Update"
                     Command="{Binding UpdateDeviceCommand}"
+                    IsDefault="True"
                     VerticalContentAlignment="Center"
                     HorizontalContentAlignment="Center"
                     Width="100"

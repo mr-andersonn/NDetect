@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using NDetective.Data;
 using NDetective.Models;
 
 namespace NDetective.ViewModels;
@@ -13,7 +14,7 @@ public partial class DevicesPageViewModel : ViewModelBase
     
     public DevicesPageViewModel()
     {
-        foreach(var d in _scanManager.GetDevices()) 
+        foreach(var d in DeviceRepository.GetAll()) 
         {
             Devices.Add(d);
         }
