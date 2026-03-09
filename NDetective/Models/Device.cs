@@ -1,14 +1,18 @@
 using System;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace NDetective.Models;
 
-public class Device : IEquatable<Device>
+public partial class Device : ObservableObject, IEquatable<Device>
 {
     public string Ip { get; set;}
     public string Mac {get; private set;}
-    
-    public string Name { get; set; }
-    public string Description {get; set;}
+
+    [ObservableProperty]
+    public string name;
+
+    [ObservableProperty]
+    public string description;
 
     public Device(string ip, string mac, string name = "Add Device Name", string description = $"Add description")
     {

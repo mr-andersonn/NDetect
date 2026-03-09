@@ -30,9 +30,12 @@ public partial class DevicesPageView : UserControl
             _editWindow.Activate();
             return;
         }
-
+        
         var vm = new EditDeviceViewModel(device);
+        
         _editWindow = new EditDeviceWindow { DataContext = vm };
+
+        vm.RequestClose += _editWindow.Close;
         
         var screenPoint = button.PointToScreen(new Point(0, 0));
         _editWindow.Position = new PixelPoint(
@@ -49,5 +52,6 @@ public partial class DevicesPageView : UserControl
         _editWindow.Show();
         
     }
+    
     
 }

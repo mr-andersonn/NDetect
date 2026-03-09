@@ -21,11 +21,12 @@
                         <Border BorderBrush="#555"
                                 BorderThickness="0,0,0,1"
                                 Margin="0,4">
-                            <Grid ColumnDefinitions="Auto,*,*,*" 
+                            <Grid ColumnDefinitions="150,*,*,*" 
                                   Margin="0, 5">
 
                                 <TextBlock Grid.Column="0"
-                                           Text="{Binding Name}" 
+                                           Text="{Binding Name}"
+                                           MaxWidth="150"
                                            FontSize="18"
                                            VerticalAlignment="Center"/>
                                 <TextBlock Grid.Column="1"
