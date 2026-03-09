@@ -42,7 +42,7 @@
                     HorizontalContentAlignment="Center"
                     Width="100"
                     Height="40"
-                    Margin="16"/>
+                    Margin="0 0 16 16"/>
             
             <Button Content="Delete"
                     Command="{Binding DeleteDeviceCommand}"
@@ -50,7 +50,7 @@
                     HorizontalContentAlignment="Center"
                     Width="100"
                     Height="40"
-                    Margin="16"/>
+                    Margin="0 0 16 16"/>
         </StackPanel>
 
     </Grid> 

@@ -21,6 +21,8 @@ public partial class DevicesPageView : UserControl
 
     private void OpenEditDeviceWindow(object? sender, RoutedEventArgs e)
     {
+        if (DataContext is not DevicesPageViewModel parentVm)
+            return;
 
         if (sender is not Button button || button.DataContext is not Device device)
             return;
@@ -31,10 +33,14 @@ public partial class DevicesPageView : UserControl
             return;
         }
         
-        var vm = new EditDeviceViewModel(device);
+        parentVm.EditDeviceCommand.Execute(device);
+
+        var vm = parentVm.CurrentEditVm;
+        if (vm is null)
+            return;
         
         _editWindow = new EditDeviceWindow { DataContext = vm };
-
+        
         vm.RequestClose += _editWindow.Close;
         
         var screenPoint = button.PointToScreen(new Point(0, 0));
