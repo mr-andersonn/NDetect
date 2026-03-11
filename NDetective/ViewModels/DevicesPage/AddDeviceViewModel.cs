@@ -9,7 +9,10 @@ namespace NDetective.ViewModels;
 public partial class AddDeviceViewModel : ViewModelBase
 {
 
-    [ObservableProperty] private string _mac, _ip, _name, _description;
+    [ObservableProperty] private string _mac;
+    [ObservableProperty] private string _ip;
+    [ObservableProperty] private string _name;
+    [ObservableProperty] private string _description;
     
     public event Action? DeviceAdded;
 

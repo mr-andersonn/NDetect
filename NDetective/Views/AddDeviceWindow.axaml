@@ -15,16 +15,29 @@
             Margin="16">
             
             <StackPanel Grid.Row="0"
+                        Spacing="10"
                         Orientation="Vertical">
                         <TextBlock Text="MAC" />
+                        <TextBox Text="{Binding Mac}" />
+                        
                         <TextBlock Text="IP" />
+                        <TextBox Text="{Binding Ip}" />
+                        
                         <TextBlock Text="Name" />
+                        <TextBox Text="{Binding Name}" />
+
                         <TextBlock Text="Description" />
+                        <TextBox Text="{Binding Description}"
+                                 Height="80"/>
                 </StackPanel>
             
                 <Button Grid.Row="1" Content="Add"
                         HorizontalAlignment="Right"
                         VerticalAlignment="Bottom"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        Width="100"
+                        Height="40"
                         Command="{Binding AddDeviceCommand}"/>
         </Grid>
 </Window>

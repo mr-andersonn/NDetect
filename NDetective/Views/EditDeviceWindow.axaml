@@ -20,13 +20,11 @@
             <TextBlock Text="{Binding SelectedDevice.Ip, StringFormat='IP: {0}'}" />
         
             <TextBlock Text="Name" />
-            <TextBox Name="NameTextBox" 
-                     Text="{Binding DeviceName}"/>
+            <TextBox Text="{Binding DeviceName}"/>
             
             <TextBlock Text="Description" />
-            <TextBox Name="DescriptionTextBox" 
-                     Text="{Binding DeviceDescription}"
-                     Height="100"/>
+            <TextBox Text="{Binding DeviceDescription}"
+                     Height="80"/>
             
             
         </StackPanel>
