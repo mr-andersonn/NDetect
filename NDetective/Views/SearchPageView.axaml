@@ -7,10 +7,13 @@
              x:Class="NDetective.Views.SearchPageView"
              x:DataType="vm:SearchPageViewModel">
     
-    <StackPanel Margin="16"
-                Spacing="10">
-        <TextBlock Text="Search" FontSize="20"/>
-        <StackPanel HorizontalAlignment="Stretch"
+    <Grid Margin="16" RowDefinitions="40,40,Auto,*">
+        <TextBlock Grid.Row="0" Text="Search" 
+                   FontSize="20" FontWeight="Bold" 
+                   Margin="0, 10" />
+        
+        <StackPanel Grid.Row="1"  
+                    HorizontalAlignment="Stretch"
                     Orientation="Horizontal"
                     Spacing="10">
             <Button FontSize="18" Command="{Binding ScanCommand}">Scan</Button>
@@ -18,23 +21,43 @@
             <Button FontSize="18" Command="{Binding SaveCommand}">Save All</Button>
         </StackPanel>
         
-        <ScrollViewer>
-            <ItemsControl ItemsSource="{Binding displayedDevices}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal" Spacing="10">
-                            <TextBlock Text="{Binding Device.Mac}"
-                                       Foreground="{Binding Foreground}"
-                                       FontSize="15"/>
-                            <TextBlock Text="{Binding Device.Ip}"
-                                       Foreground="{Binding Foreground}"
-                                       FontSize="15"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </ScrollViewer>
-    </StackPanel>
+            <ScrollViewer Grid.Row="2" Margin="0 10">
+                <ItemsControl ItemsSource="{Binding Authorized}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                <TextBlock Text="{Binding Device.Mac}"
+                                           Foreground="{Binding Foreground}"
+                                           FontSize="15"/>
+                                <TextBlock Text="{Binding Device.Ip}"
+                                           Foreground="{Binding Foreground}"
+                                           FontSize="15"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+            
+            <ScrollViewer Grid.Row="3" 
+                          VerticalAlignment="Bottom"
+                          Margin="0 0 0 50">
+                <ItemsControl  ItemsSource="{Binding Unauthorized}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                <TextBlock Text="{Binding Device.Mac}"
+                                           Foreground="{Binding Foreground}"
+                                           FontSize="20"/> 
+                                <TextBlock Text="{Binding Device.Mac}"
+                                           Foreground="{Binding Foreground}"
+                                           FontSize="20"/> 
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+
+    </Grid>
 
     
 </UserControl>

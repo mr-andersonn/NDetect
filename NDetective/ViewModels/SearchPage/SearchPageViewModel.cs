@@ -18,7 +18,8 @@ public partial class SearchPageViewModel : ViewModelBase
 
     public bool ScanRunning;
     
-    public ObservableCollection<DisplayedDevice> displayedDevices { get; } = new();
+    public ObservableCollection<DisplayedDevice> Authorized { get; } = new();
+    public ObservableCollection<DisplayedDevice> Unauthorized { get; } = new(); 
     
     [RelayCommand]
     private async Task Scan()
@@ -29,20 +30,37 @@ public partial class SearchPageViewModel : ViewModelBase
         
         while (ScanRunning)
         {
-            displayedDevices.Clear();
+            Authorized.Clear();
         
             await _scanManager.RunArpScan();
-        
-            Devices.Clear();
+            
             if (_scanManager.LastScan?.Devices is null) return;
 
             foreach (var d in _scanManager.LastScan.Devices)
             {
-                Devices.Add(d);
-            
                 bool isAuthorized = SavedDevices.Contains(d);
-            
-                displayedDevices.Add(new DisplayedDevice(d, isAuthorized));
+
+                var list = (isAuthorized) ? Authorized : Unauthorized;
+
+                if (isAuthorized)
+                {
+                    Authorized.Add(new DisplayedDevice(d, isAuthorized));
+                }
+                else
+                {
+                    var match = false;
+                    foreach (var ud in Unauthorized)
+                    {
+                        if (ud.Device.Equals(d))
+                            match = true;
+                        break;
+                    }
+
+                    if (!match)
+                    {
+                        Unauthorized.Add(new DisplayedDevice(d, isAuthorized));
+                    }
+                }
             }
 
             Console.WriteLine($"Iteration {++i}");
