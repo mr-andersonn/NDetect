@@ -1,3 +1,4 @@
+using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
@@ -26,7 +27,10 @@ public partial class App : Application
             desktop.MainWindow = new MainWindow
             {
                 DataContext = new MainWindowViewModel(),
+                ShowInTaskbar = false
             };
+            
+            desktop.MainWindow.Hide();
         }
 
         base.OnFrameworkInitializationCompleted();
@@ -43,5 +47,21 @@ public partial class App : Application
         {
             BindingPlugins.DataValidators.Remove(plugin);
         }
+    }
+
+    private void OpenApp(object? sender, EventArgs e)
+    {
+        if (ApplicationLifetime is not IClassicDesktopStyleApplicationLifetime desktop) return;
+        
+        desktop.MainWindow?.Show();
+        desktop.MainWindow?.Activate();
+
+    }
+
+    private void CloseApp(object? sender, EventArgs e)
+    {
+        if (ApplicationLifetime is not IClassicDesktopStyleApplicationLifetime desktop) return;
+        
+        desktop.Shutdown();
     }
 }

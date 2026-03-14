@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="NDetective" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="icons.axaml" uri="ms-resource://NDetective/Files/Assets/icons.axaml">
+					<Candidate type="Path">
+						<Value>Assets\icons.axaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NDetectiveIcon.png" uri="ms-resource://NDetective/Files/Assets/NDetectiveIcon.png">
+					<Candidate type="Path">
+						<Value>Assets\NDetectiveIcon.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

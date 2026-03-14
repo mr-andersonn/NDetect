@@ -27,7 +27,7 @@ public partial class SearchPageViewModel : ViewModelBase
         ScanRunning = true;
         
         int i = 0;
-        
+         
         Console.WriteLine("Scan started.");
         
         while (ScanRunning)
