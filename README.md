@@ -58,6 +58,7 @@ dotnet publish -c Release /p:PublishSingleFile=true
 
 Without single-file publishing the output directory will contain many DLL files.
 
+<br>
 
 ## Important notes from the developer
 
