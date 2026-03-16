@@ -32,9 +32,9 @@ public partial class SearchPageViewModel : ViewModelBase
         
         while (ScanRunning)
         {
-            Authorized.Clear();
         
             await _scanManager.RunArpScan();
+            Authorized.Clear();
             
             if (_scanManager.LastScan?.Devices is null) return;
 

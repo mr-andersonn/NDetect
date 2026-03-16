@@ -3,54 +3,131 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:NDetective.ViewModels"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        Width="400" Height="400"
-        Background="#1e1e1e"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="600"
+        Width="420"
+        Height="500"
+        Background="#0D0D0D"
         Title="{Binding WindowTitle}"
-        Icon="/Assets/NDetectiveIcon.png"
+        Icon="/Assets/NDetectiveIcon.ico"
         x:Class="NDetective.Views.EditDeviceWindow"
         x:DataType="vm:EditDeviceViewModel">
-    
-    <Grid RowDefinitions="Auto, *">
-        <StackPanel HorizontalAlignment="Stretch"
-                    Spacing="15"
-                    Margin="16">
-        
-            <TextBlock Text="{Binding SelectedDevice.Mac, StringFormat='MAC: {0}'}" />
-            <TextBlock Text="{Binding SelectedDevice.Ip, StringFormat='IP: {0}'}" />
-        
-            <TextBlock Text="Name" />
-            <TextBox Text="{Binding DeviceName}"/>
-            
-            <TextBlock Text="Description" />
-            <TextBox Text="{Binding DeviceDescription}"
-                     Height="80"/>
-            
-            
-        </StackPanel>
-        <StackPanel Grid.Row="1"
+
+    <Window.Styles>
+        <Style Selector="Window">
+            <Setter Property="Foreground" Value="#EAEAEA"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+
+        <Style Selector="TextBlock.WindowTitle">
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#EAEAEA"/>
+        </Style>
+
+        <Style Selector="TextBlock.SectionLabel">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#9A9A9A"/>
+        </Style>
+
+        <Style Selector="TextBlock.DeviceMeta">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="#CFCFCF"/>
+        </Style>
+
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="#1A1A1A"/>
+            <Setter Property="Foreground" Value="#EAEAEA"/>
+            <Setter Property="BorderBrush" Value="#2A2A2A"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10,8"/>
+        </Style>
+
+        <Style Selector="TextBox:focus">
+            <Setter Property="BorderBrush" Value="#3A3A3A"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="Background" Value="#232323"/>
+            <Setter Property="Foreground" Value="#EAEAEA"/>
+            <Setter Property="BorderBrush" Value="#2F2F2F"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="MinWidth" Value="100"/>
+        </Style>
+
+        <Style Selector="Button:pointerover">
+            <Setter Property="Background" Value="#2B2B2B"/>
+        </Style>
+
+        <Style Selector="Button.DeleteButton">
+            <Setter Property="Background" Value="#2A1C1C"/>
+            <Setter Property="BorderBrush" Value="#4A2A2A"/>
+            <Setter Property="Foreground" Value="#F0D6D6"/>
+        </Style>
+
+        <Style Selector="Button.DeleteButton:pointerover">
+            <Setter Property="Background" Value="#352020"/>
+        </Style>
+
+        <Style Selector="Border.Card">
+            <Setter Property="Background" Value="#151515"/>
+            <Setter Property="BorderBrush" Value="#242424"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="18"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid Margin="20" RowDefinitions="Auto,Auto,*,Auto" RowSpacing="16">
+
+        <TextBlock Grid.Row="0"
+                   Text="{Binding WindowTitle}"
+                   Classes="WindowTitle"/>
+
+        <Border Grid.Row="1" Classes="Card">
+            <StackPanel Spacing="6">
+                <TextBlock Text="Current device"
+                           Classes="SectionLabel"/>
+                <TextBlock Text="{Binding SelectedDevice.Mac, StringFormat='MAC: {0}'}"
+                           Classes="DeviceMeta"/>
+                <TextBlock Text="{Binding SelectedDevice.Ip, StringFormat='IP: {0}'}"
+                           Classes="DeviceMeta"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="2" Classes="Card">
+            <StackPanel Spacing="14">
+                <StackPanel Spacing="6">
+                    <TextBlock Text="Name"
+                               Classes="SectionLabel"/>
+                    <TextBox Text="{Binding DeviceName}"/>
+                </StackPanel>
+
+                <StackPanel Spacing="6">
+                    <TextBlock Text="Description"
+                               Classes="SectionLabel"/>
+                    <TextBox Text="{Binding DeviceDescription}"
+                             Height="100"
+                             AcceptsReturn="True"
+                             TextWrapping="Wrap"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <StackPanel Grid.Row="3"
                     Orientation="Horizontal"
-                    VerticalAlignment="Bottom"
-                    HorizontalAlignment="Right">
-            
+                    HorizontalAlignment="Right"
+                    Spacing="10">
+            <Button Content="Delete"
+                    Classes="DeleteButton"
+                    Command="{Binding DeleteDeviceCommand}"/>
+
             <Button Content="Update"
                     Command="{Binding UpdateDeviceCommand}"
-                    IsDefault="True"
-                    VerticalContentAlignment="Center"
-                    HorizontalContentAlignment="Center"
-                    Width="100"
-                    Height="40"
-                    Margin="0 0 16 16"/>
-            
-            <Button Content="Delete"
-                    Command="{Binding DeleteDeviceCommand}"
-                    VerticalContentAlignment="Center"
-                    HorizontalContentAlignment="Center"
-                    Width="100"
-                    Height="40"
-                    Margin="0 0 16 16"/>
+                    IsDefault="True"/>
         </StackPanel>
 
-    </Grid> 
-
+    </Grid>
 </Window>

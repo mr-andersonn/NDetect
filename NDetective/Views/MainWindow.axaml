@@ -3,69 +3,148 @@
         xmlns:vm="using:NDetective.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="600"
-        Width="800" Height="500"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="700"
+        Width="800"
+        Height="700"
+        MinWidth="800"
+        MinHeight="700"
         WindowStartupLocation="CenterScreen"
         x:Class="NDetective.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/NDetectiveIcon.ico"
         Title="NDetective"
-        Classes="MainWindow">
-    
+        Icon="/Assets/NDetectiveIcon.ico"
+        Background="#0D0D0D">
+
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-    
+
     <Window.Styles>
-        <StyleInclude Source="avares://NDetective/Styles/Styles.axaml"/>
+
+        <Style Selector="Window">
+            <Setter Property="Foreground" Value="#EAEAEA"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="Background" Value="#1E1E1E"/>
+            <Setter Property="BorderBrush" Value="#2A2A2A"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8"/>
+        </Style>
+
+        <Style Selector="Button:pointerover">
+            <Setter Property="Background" Value="#2A2A2A"/>
+        </Style>
+
+        <Style Selector="ListBox">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style Selector="ListBoxItem">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="0,4,0,0"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
+        <Style Selector="ListBoxItem:pointerover">
+            <Setter Property="Background" Value="#2A2A2A"/>
+        </Style>
+
+        <Style Selector="ListBoxItem:selected">
+            <Setter Property="Background" Value="#3A3A3A"/>
+        </Style>
+
     </Window.Styles>
-    
 
 
     <SplitView IsPaneOpen="{Binding IsPaneOpen}"
-               OpenPaneLength="120"
-               CompactPaneLength="50"
-               DisplayMode="CompactInline"
-               Background="#000">
-        
-        <!-- This is the menu. -->
+               OpenPaneLength="200"
+               CompactPaneLength="60"
+               DisplayMode="CompactInline">
+
+        <!-- SIDEBAR -->
+
         <SplitView.Pane>
-            <Border  Background="#000">
-                <StackPanel Spacing="10"
-                            Margin="5"
-                            Background="#000">
-                    <Button Command="{Binding HideOpenMenuCommand}">
-                        <PathIcon Data="{Binding CurrentPaneIcon}"></PathIcon>
-                    </Button>
-                
-                    <!-- Structure for the list of items in the menu. It gets the items from the ListItemTemplate-->
-                    <ListBox ItemsSource="{Binding Items}"
-                             SelectedItem="{Binding SelectedListItem}"
-                             Background="#000"
-                             Foreground="White">
+
+            <Border Background="#151515">
+
+                <Grid RowDefinitions="Auto,*" Margin="10">
+
+                    <!-- HEADER -->
+
+                    <StackPanel Orientation="Horizontal"
+                                Spacing="10"
+                                Margin="0,0,0,15">
+
+                        <Button Command="{Binding HideOpenMenuCommand}"
+                                Width="32"
+                                Height="32"
+                                Padding="0">
+                            <PathIcon Data="{Binding CurrentPaneIcon}" Width="16"/>
+                        </Button>
+
+                        <TextBlock Text="NDetective"
+                                   FontWeight="Bold"
+                                   VerticalAlignment="Center"
+                                   IsVisible="{Binding IsPaneOpen}"/>
+
+                    </StackPanel>
+
+
+                    <!-- NAVIGATION -->
+
+                    <ListBox Grid.Row="1"
+                             ItemsSource="{Binding Items}"
+                             SelectedItem="{Binding SelectedListItem}">
+
                         <ListBox.ItemTemplate>
+
                             <DataTemplate DataType="{x:Type vm:ListItemTemplate}">
-                                <StackPanel Spacing="15" Orientation="Horizontal">
-                                    <PathIcon Data="{Binding ListItemIcon}"/>
-                                    <TextBlock Text="{Binding Label}" />
-                                </StackPanel>
+
+                                <Grid ColumnDefinitions="24,*"
+                                      ColumnSpacing="10">
+
+                                    <PathIcon Grid.Column="0"
+                                              Data="{Binding ListItemIcon}"
+                                              Width="18"
+                                              Height="18"/>
+
+                                    <TextBlock Grid.Column="1"
+                                               Text="{Binding Label}"
+                                               VerticalAlignment="Center"/>
+
+                                </Grid>
+
                             </DataTemplate>
+
                         </ListBox.ItemTemplate>
+
                     </ListBox>
-                </StackPanel>
+
+                </Grid>
+
             </Border>
 
         </SplitView.Pane>
-        
-        
-        <!-- This is the main window that changes -->
+
+
+        <!-- MAIN CONTENT -->
+
         <SplitView.Content>
-            <Border Background="#111">
-                <TransitioningContentControl Content="{Binding CurrentPage}" />
+
+            <Border Background="#1E1E1E"
+                    Padding="20">
+
+                <TransitioningContentControl Content="{Binding CurrentPage}"/>
+
             </Border>
+
         </SplitView.Content>
+
     </SplitView>
-    
-    
 
 </Window>

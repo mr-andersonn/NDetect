@@ -4,70 +4,137 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:views="clr-namespace:NDetective.Views"
              xmlns:viewModels="clr-namespace:NDetective.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="450"
              x:Class="NDetective.Views.DevicesPageView"
              x:Name="Root"
              x:DataType="viewModels:DevicesPageViewModel">
-    
-    <Grid Margin="16" RowDefinitions="Auto,*">
-        <TextBlock Grid.Row="0" Text="Devices" 
-                   FontSize="20" FontWeight="Bold"
-                   Margin="0, 10"/>
-        
-        <Grid Grid.Row="1">
-            <ItemsControl ItemsSource="{Binding Devices}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Border BorderBrush="#555"
-                                BorderThickness="0,0,0,1"
-                                Margin="0,4">
-                            <Grid ColumnDefinitions="160,*,*,*" 
-                                  Margin="0, 5">
 
-                                <TextBlock Grid.Column="0"
-                                           Text="{Binding Name}"
-                                           MaxWidth="150"
-                                           FontSize="18"
-                                           VerticalAlignment="Center"/>
-                                <TextBlock Grid.Column="1"
-                                           Text="{Binding Ip}" 
-                                           FontSize="14" 
-                                           VerticalAlignment="Center"
-                                           HorizontalAlignment="Right"/>
-                                <TextBlock Grid.Column="2"
-                                           Text="{Binding Mac}" 
-                                           FontSize="14" 
-                                           VerticalAlignment="Center"
-                                           HorizontalAlignment="Right"
-                                           Margin="10, 0"/>
-                                <Button Grid.Column="3" Content="Edit"
-                                        Width="100"
-                                        HorizontalContentAlignment="Center"
-                                        VerticalContentAlignment="Center"
-                                        HorizontalAlignment="Right"
-                                        VerticalAlignment="Stretch"
-                                        Click="OpenEditDeviceWindow"/> 
-                            </Grid>
-                        </Border>
+    <UserControl.Styles>
+        <Style Selector="TextBlock.PageTitle">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#EAEAEA"/>
+        </Style>
 
+        <Style Selector="TextBlock.ColumnHeader">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#9A9A9A"/>
+        </Style>
 
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-            
+        <Style Selector="TextBlock.DeviceName">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#EAEAEA"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style Selector="TextBlock.DeviceInfo">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="#CFCFCF"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style Selector="Border.ListPanel">
+            <Setter Property="Background" Value="#171717"/>
+            <Setter Property="BorderBrush" Value="#262626"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="16"/>
+        </Style>
+
+        <Style Selector="Border.DeviceRow">
+            <Setter Property="Background" Value="#1D1D1D"/>
+            <Setter Property="BorderBrush" Value="#2A2A2A"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="14,12"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+
+        <Style Selector="Button.ActionButton">
+            <Setter Property="Background" Value="#232323"/>
+            <Setter Property="Foreground" Value="#EAEAEA"/>
+            <Setter Property="BorderBrush" Value="#2F2F2F"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="MinWidth" Value="96"/>
+        </Style>
+
+        <Style Selector="Button.ActionButton:pointerover">
+            <Setter Property="Background" Value="#2B2B2B"/>
+        </Style>
+
+        <Style Selector="Button.AddButton">
+            <Setter Property="Background" Value="#232323"/>
+            <Setter Property="Foreground" Value="#EAEAEA"/>
+            <Setter Property="BorderBrush" Value="#2F2F2F"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="18,11"/>
+            <Setter Property="MinWidth" Value="120"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style Selector="Button.AddButton:pointerover">
+            <Setter Property="Background" Value="#2B2B2B"/>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid Margin="20" RowDefinitions="Auto,*,Auto" RowSpacing="16">
+        <TextBlock Grid.Row="0"
+                   Text="Devices"
+                   Classes="PageTitle"/>
+
+        <Border Grid.Row="1" Classes="ListPanel">
+            <Grid RowDefinitions="Auto,*" RowSpacing="12">
+                <Grid ColumnDefinitions="180,140,*,Auto"
+                      ColumnSpacing="16">
+                    <TextBlock Grid.Column="0" Text="Name" Classes="ColumnHeader"/>
+                    <TextBlock Grid.Column="1" Text="IP" Classes="ColumnHeader"/>
+                    <TextBlock Grid.Column="2" Text="MAC" Classes="ColumnHeader"/>
+                </Grid>
+
+                <ScrollViewer Grid.Row="1">
+                    <ItemsControl ItemsSource="{Binding Devices}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Classes="DeviceRow">
+                                    <Grid ColumnDefinitions="180,140,*,Auto"
+                                          ColumnSpacing="16">
+                                        <TextBlock Grid.Column="0"
+                                                   Text="{Binding Name}"
+                                                   MaxWidth="170"
+                                                   TextTrimming="CharacterEllipsis"
+                                                   Classes="DeviceName"/>
+
+                                        <TextBlock Grid.Column="1"
+                                                   Text="{Binding Ip}"
+                                                   Classes="DeviceInfo"/>
+
+                                        <TextBlock Grid.Column="2"
+                                                   Text="{Binding Mac}"
+                                                   Classes="DeviceInfo"/>
+
+                                        <Button Grid.Column="3"
+                                                Content="Edit"
+                                                Classes="ActionButton"
+                                                Click="OpenEditDeviceWindow"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
             <Button Content="Add Device"
-                    Width="100"
-                    Height="40"
-                    VerticalContentAlignment="Center"
-                    HorizontalContentAlignment="Center"
-                    VerticalAlignment="Bottom"
-                    HorizontalAlignment="Right"
+                    Classes="AddButton"
                     Click="OpenAddDeviceWindow"/>
-        </Grid>
-        
-
+        </StackPanel>
     </Grid>
-    
-    
-    
 </UserControl>

@@ -46,8 +46,8 @@ public partial class DevicesPageView : UserControl
         
         var screenPoint = button.PointToScreen(new Point(0, 0));
         _editWindow.Position = new PixelPoint(
-            (int) (screenPoint.X + button.Bounds.Width + 50),
-            (int) screenPoint.Y);
+            (int) (screenPoint.X - button.Bounds.Width + 50 - _editWindow.Width),
+            (int) screenPoint.Y - (int) (_editWindow.Height / 2));
 
         
         // Sets _editWindow back to null on window closed event
@@ -87,8 +87,8 @@ public partial class DevicesPageView : UserControl
         
         var screenPoint = button.PointToScreen(new Point(0, 0));
         _addWindow.Position = new PixelPoint(
-            (int) (screenPoint.X + button.Bounds.Width + 50),
-            (int) screenPoint.Y - (int) _addWindow.Height + (int) button.Height / 2);
+            (int) (screenPoint.X - button.Bounds.Width + 50 - _addWindow.Width),
+            (int) screenPoint.Y - (int) (_addWindow.Height * 0.9));
         
         _addWindow.Closed += (_, _) =>
         {
