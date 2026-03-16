@@ -12,7 +12,7 @@ But what if you didn’t have to manually scan your network every time you got s
 
 What if an app continuously monitored your LAN, recorded every device it sees, and alerted you when something unfamiliar appears?
 
-**NDetect (Network Detective)** is a lightweight cross-platform network scanner built with **Avalonia UI**.
+**NDetect (Network Detective)** is a lightweight cross-platform network scanner built with .NET **Avalonia UI**.
 It periodically scans your local network, tracks discovered devices, and notifies you about unknown or unauthorized connections.
 
 When minimized, the app stays hidden in the **system tray**, quietly watching your network.
