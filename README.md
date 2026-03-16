@@ -4,7 +4,7 @@ Have you ever wondered:
 
 *"Is someone connected to my network and spying on me right now?"*
 
-You open the terminal in mild panic, run `nmap`, and… nothing.
+You open the terminal in panic, run `nmap`, and… nothing.
 
 Crisis avoided. For now.
 
