@@ -47,6 +47,7 @@ In the **Devices** window you can add, edit, or remove known devices.
 <br>
 <br>
 <br>
+<br>
 
 
 🖥 **Cross-platform**
